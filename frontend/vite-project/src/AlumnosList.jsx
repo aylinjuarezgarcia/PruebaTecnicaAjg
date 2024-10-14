@@ -3,7 +3,7 @@ import React from 'react';
 import { useQuery } from 'react-query';
 
 const fetchAlumnos = async () => {
-    const response = await fetch('http://localhost:5000/api/alumnos');
+    const response = await fetch('http://localhost:5000/api/Alumnos');
     if (!response.ok) {
         throw new Error('Error al obtener los alumnos');
     }

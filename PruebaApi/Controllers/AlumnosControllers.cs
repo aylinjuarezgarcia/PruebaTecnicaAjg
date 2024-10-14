@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Cors;
 namespace PruebaApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("AllowAllOrigins")]
     public class AlumnosController : ControllerBase
     {
         [HttpGet]

@@ -2,14 +2,19 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 
 const Alumnos = () => {
-  const { data, error, isLoading } = useQuery('alumnos', async () => {
-    const response = await fetch('http://localhost:5000/api/alumnos');
-    if (!response.ok) {
-      throw new Error('Error al obtener los alumnos');
-    }
-    return response.json();
-  });
-
+  const { data, error, isLoading } = useQuery({
+    queryKey:   ['alumnos'], 
+    queryFn:
+    async () => {
+       const response = await fetch('http://localhost:5000/api/alumnos')
+       if (!response.ok) {
+         throw new Error('Error al obtener los alumnos')
+       }
+       return response.json()
+   }
+   
+   }
+   )
   if (isLoading) return <div>Cargando...</div>;
   if (error) return <div>Error: {error.message}</div>;
 

@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Habilitamos el uso de controladores
-builder.Services.AddControllers(); // <-- aqui agregue los controladores
+builder.Services.AddControllers(); // <-- aquí agregue los controladores
 
 // Agregar CORS
 builder.Services.AddCors(options =>
@@ -22,7 +22,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configuramos el middleware de CORS
-app.UseCors("AllowAllOrigins"); // <-- Usar la política de CORS para solicitar recursos de dominios distintos
+app.UseCors("AllowAllOrigins"); // <-- Use la política de CORS para solicitar recursos de dominios distintos
 
 // Configuramos the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -34,9 +34,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 // Mapear controladores (incluyendo AlumnosController)
-app.MapControllers(); // <--Aqui se Mapea las rutas de los controladores
+app.MapControllers(); // <-- Aquí se Mapea las rutas de los controladores
 
-//endpoint ex
+// endpoint ex
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering"

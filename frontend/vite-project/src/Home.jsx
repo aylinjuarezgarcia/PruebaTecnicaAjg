@@ -18,7 +18,7 @@ const Home = () => {
         <button onClick={() => handleColorChange('yellow')}>Amarillo</button>
         <button onClick={() => handleColorChange('red')}>Rojo</button>
       </div>
-      <button onClick={() => navigate('/alumnos')}>Ver Alumnos</button>
+      <button onClick={() => navigate('/Alumnos')}>Ver Alumnos</button>
     </div>
   );
 };

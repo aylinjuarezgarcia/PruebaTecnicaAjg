@@ -31,3 +31,4 @@ C:\Users\Aylin JG\Desktop\Prueba_tecnica_ajg\pruebaApi\obj\Debug\net8.0\refint\P
 C:\Users\Aylin JG\Desktop\Prueba_tecnica_ajg\pruebaApi\obj\Debug\net8.0\PruebaApi.pdb
 C:\Users\Aylin JG\Desktop\Prueba_tecnica_ajg\pruebaApi\obj\Debug\net8.0\PruebaApi.genruntimeconfig.cache
 C:\Users\Aylin JG\Desktop\Prueba_tecnica_ajg\pruebaApi\obj\Debug\net8.0\ref\PruebaApi.dll
+C:\Users\Aylin JG\Desktop\Prueba_tecnica_ajg\PruebaApi\obj\Debug\net8.0\PruebaApi.sourcelink.json
